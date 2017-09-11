@@ -1,0 +1,139 @@
+
+%\setcounter{secnumdepth}{3}
+
+
+%====================== notations =======================%
+
+\newcommand{\rmat}{\mbox{$R$}\xspace}
+%\newcommand{\rmatt}{\mbox{$\tilde {\mathbf{R}}$}\xspace}
+%\newcommand{\rmath}{\mbox{$\hat {\mathbf{R}}$}\xspace}
+\newcommand{\umat}{\mbox{$U$}\xspace}
+\newcommand{\vmat}{\mbox{$V$}\xspace}
+\newcommand{\wmat}{\mbox{$W$}\xspace}
+\newcommand{\pmat}{\mbox{$P$}\xspace}
+\newcommand{\qmat}{\mbox{$Q$}\xspace}
+
+\newcommand{\bu}{\mbox{$b_u$}\xspace}
+\newcommand{\bi}{\mbox{$b_i$}\xspace}
+
+\newcommand{\puvec}{\mbox{$\bm{p}_u$}\xspace}
+\newcommand{\puvect}{\mbox{$\bm{p}_{ut}$}\xspace}
+\newcommand{\qivec}{\mbox{$\bm{q}_i$}\xspace}
+\newcommand{\qivect}{\mbox{$\bm{q}_i^{\mathsf{T}}$}\xspace}
+
+
+
+\newcommand{\uuvec}{\mbox{$\bm{u}_u$}\xspace}
+\newcommand{\uuvect}{\mbox{$\bm{u}_{ut}$}\xspace}
+\newcommand{\vivec}{\mbox{$\bm{v}_i$}\xspace}
+\newcommand{\vivect}{\mbox{$\bm{v}_i^{\mathsf{T}}$}\xspace}
+
+%\newcommand{\users}{\mbox{$\mathop{\mathcal{C}}$}\xspace}
+%\newcommand{\items}{\mbox{$\mathop{\mathcal{D}}$}\xspace}
+\newcommand{\nusers}{\mbox{$m$}\xspace}
+\newcommand{\nitems}{\mbox{$n$}\xspace}
+\newcommand{\nfactors}{\mbox{$k$}\xspace}
+
+\newcommand{\samFactor}{\mbox{$\mathop{\rho}$}\xspace}
+\newcommand{\lr}{\mbox{$\mathbf{\eta}$}\xspace}
+\newcommand{\ruih}{\mbox{$\mathop{\hat{r}_{ui}}$}\xspace}
+\newcommand{\ruit}{\mbox{$\mathop{\tilde{r}_{ui}}$}\xspace}
+\newcommand{\rui}{\mbox{$\mathop{r_{ui}}$}\xspace}
+
+
+\newcommand{\rplusu}{\mbox{$\mathcal{R}^+_u$}\xspace}
+\newcommand{\rplusi}{\mbox{$\mathcal{R}^+_i$}\xspace}
+\newcommand{\rminusu}{\mbox{$\mathcal{R}^-_u$}\xspace}
+\newcommand{\rminusi}{\mbox{$\mathcal{R}^-_i$}\xspace}
+
+\newcommand{\usru}{\mbox{${u}$}\xspace}
+\newcommand{\itmi}{\mbox{${i}$}\xspace}
+
+
+\newcommand{\rush}{\mbox{$\hat{r}_{u}^{\mathcal{S}}$}\xspace}
+\newcommand{\rus}{\mbox{$r_{u}^{\mathcal{S}}$}\xspace}
+\newcommand{\sets}{\mbox{$\mathcal{S}$}\xspace}
+\newcommand{\setsz}{\mbox{$|\mathcal{S}|$}\xspace}
+
+
+%================ bilinear ==============================%
+
+\DeclareMathOperator{\sml}{sim}
+\DeclareMathOperator{\gsml}{gsim}
+\DeclareMathOperator{\imp}{imp}
+
+\newcommand*{\CFBSM}{\textsc{FBSM}\xspace}
+\newcommand*{\CFBSMEXP}{Feature-based factorized Bilinear Similarity Model for
+Cold-Start Top-n Item Recommendation\xspace}
+\newcommand*{\CF}{\textsc{UFBSM}\xspace}
+\newcommand*{\CFEXP}{User-specific Feature-based factorized Bilinear Similarity Model\xspace}
+\newcommand*{\CFEXPS}{User-specific feature-based factorized bilinear similarity model\xspace}
+\newcommand*{\CFEXPB}{\textbf{U}ser-specific \textbf{F}eature-based factorized \textbf{B}ilinear \textbf{S}imilarity \textbf{M}odel\xspace}
+\newcommand*{\CFLIN}{\textsc{UFSM}\xspace}
+\newcommand*{\CFLINEXP}{User-specific Feature-based Similarity Models\xspace}
+\newcommand*{\AFM}{\textsc{AFM}\xspace}
+\newcommand*{\AFMbpr}{\textsc{AFM$_{bpr}$}\xspace}
+\newcommand*{\AFMI}{\textsc{AFMI$_{rmse}$}\xspace}
+\newcommand*{\RLFM}{\textsc{RLFM}\xspace}
+\newcommand*{\RLFMI}{\textsc{RLFMI}\xspace}
+\newcommand*{\DCGN}{DCG@$n$\xspace}
+\newcommand*{\COSIM}{CoSim\xspace}
+\newcommand*{\PFW}{PFW\xspace}
+\newcommand*{\TOPN}{Top-$n$\xspace}
+\newcommand*{\CUL}{CUL\xspace}
+\newcommand*{\CULEXP}{CiteULike\xspace}
+\newcommand*{\AMAZON}{ABB\xspace}
+%\newcommand*{\BX}{BX\xspace}
+%\newcommand*{\MLIMDB}{ML-IMDB\xspace}
+\newcommand*{\MLHR}{ML-HR (genre)\xspace}
+\newcommand*{\MLHREXP}{MovieLens-HetRec\xspace}
+
+\newcommand{\diag}{\text{diag}}
+
+
+%================ matrix completion =====================%
+\newcommand*{\minimize}{\operatornamewithlimits{minimize}}
+%\newcommand*{\TOPN}{Top-$n$\xspace}
+\newcommand*{\topf}{top $5\%$\xspace}
+\newcommand*{\MLTM}{Movielens 20M\xspace}
+\newcommand*{\MLOM}{Movielens 1M\xspace}
+\newcommand*{\YMusic}{Yahoo Music\xspace}
+\newcommand*{\YMovies}{Yahoo Movies\xspace}
+\newcommand*{\BX}{Book-Crossing\xspace}
+\newcommand*{\FLIX}{Flixster\xspace}
+\newcommand*{\NF}{Netflix\xspace}
+\newcommand*{\EM}{EachMovie\xspace}
+\newcommand*{\JEST}{Jester\xspace}
+\newcommand*{\MF}{Matrix Factorization\xspace}
+\newcommand*{\mf}{matrix factorization\xspace}
+\newcommand*{\Mf}{Matrix factorization\xspace}
+\newcommand*{\PPR}{Personalized PageRank\xspace}
+\newcommand*{\PSVD}{PureSVD\xspace}
+\newcommand*{\RECN}{Recall@$n$\xspace}
+\newcommand*{\TMF}{TruncatedMF\xspace}
+\newcommand*{\TMFEXP}{Truncated Matrix Factorization\xspace}
+\newcommand*{\TMFEXPS}{Truncated matrix factorization\xspace}
+
+%=============== LFS ==================================%
+\newcommand*{\ML}{Movielens\xspace}
+\newcommand*{\BPR}{Bayesian Personalized Ranking\xspace}
+\newcommand*{\PRECN}{Precision@$n$\xspace}
+\newcommand*{\OCALLN}{1-call@$n$\xspace}
+\newcommand*{\ARM}{ARM\xspace}
+\newcommand*{\ES}{ESARM\xspace}
+\newcommand*{\VO}{VOARM\xspace}
+\newcommand*{\SETAVG}{SetAvg\xspace}
+%\newcommand*{\MXMN}{MXMNARM\xspace}
+\newcommand*{\MLREALSETS}{ML-RealSets\xspace}
+
+\newcommand*{\LFS}{LFS\xspace}
+\iffalse
+\newcommand*{\LFSSUB}{LFSSubSeq\xspace}
+\newcommand*{\LFSSTD}{LFSStdDev\xspace}
+\newcommand*{\LFSMAXMIN}{LFSMaxMin\xspace}
+\newcommand*{\LFSWFBias}{LFSWFBias\xspace}
+\newcommand*{\AUCI}{Item AUC\xspace}
+\newcommand*{\AUCS}{Set AUC\xspace}
+\fi
+
+

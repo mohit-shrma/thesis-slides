@@ -1,0 +1,102 @@
+\documentclass[t,xcolor={dvipsnames,usenames}]{beamer}
+
+\input{packages}
+\input{defs}
+
+\usetheme{default}
+
+\setbeamersize{text margin left=.3in,text margin right=0.3in}
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamercolor{title}{fg=black}
+\setbeamercolor{section in toc}{fg=black}
+
+\setbeamercolor{frametitle}{fg=black}
+\setbeamerfont{frametitle}{series=\bfseries,size=\Large}
+\setbeamertemplate{frametitle}
+{   \vspace{4pt}
+    \noindent\begin{minipage}[c][1.1em][t]{\textwidth}\insertframetitle\end{minipage}\par
+    \hrule height 1pt\par
+}
+
+\setbeamercolor{block title}{fg=black}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{itemize subitem}{fg=black}
+\setbeamercolor{enumerate item}{fg=black}
+\setbeamercolor{enumerate subitem}{fg=black}
+%\setbeamertemplate{itemize item}{{\small $\bullet$}}
+
+
+\setbeamercolor{footline}{fg=gray}
+\setbeamerfont{footline}{size=\Tiny}
+\setbeamertemplate{footline}
+{
+  \flushright{\insertframenumber{} /
+  \inserttotalframenumber\hspace*{2ex}}\par
+  \vspace{1.5ex}\par
+}
+%\setbeamertemplate{footline}{}
+
+
+
+\title{Preference Modeling and Accuracy in Recommender Systems}
+\author{Mohit Sharma\\Advisor: Prof. George Karypis}
+\institute{
+  University of Minnesota\\
+  \url{mohit@cs.umn.edu}
+}
+\date{\today}
+
+
+%\AtBeginSection[]
+%{
+%  \begin{frame}[noframenumbering]{Table of Contents}
+%    \tableofcontents[currentsection, sectionstyle=show/shaded]
+%  \end{frame}
+%}
+
+\AtBeginSubsection[]
+{
+  \begin{frame}[noframenumbering]{Outline}
+    \tableofcontents[currentsection, currentsubsection,
+    sectionstyle=show/shaded, subsectionstyle=show/shaded]
+  \end{frame}
+}
+
+%\AtBeginSubsubsection[]
+%{
+%  \begin{frame}[noframenumbering]{Table of Contents}
+%    \Fontvi \tableofcontents[currentsection, currentsubsection,
+%    sectionstyle=show/shaded, subsectionstyle=show/shaded]
+%  \end{frame}
+%}
+
+
+
+
+
+\begin{document}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+%\begin{frame}[noframenumbering]{Outline}
+%   \tableofcontents
+%\end{frame}
+
+\section{Overview}
+
+\input{recsys.tex}
+\input{thesis_focus.tex}
+\input{matrix_completion.tex}
+
+
+ \begin{frame}
+     \printbibliography
+ \end{frame} 
+
+
+\end{document}
